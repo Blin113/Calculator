@@ -1,0 +1,77 @@
+using System;
+
+class MainClass {
+  public static void Main (string[] args) {
+    Console.WriteLine ("\nWelcome to Proplayer calculator 1.0 \n");
+    Console.WriteLine("Please choose the type of calculation you wish to preform:");
+
+    Console.WriteLine("1. addition");
+    Console.WriteLine("2. subtraction");
+    Console.WriteLine("3. division");
+    Console.WriteLine("4. multiplication");
+    Console.WriteLine("5. Quit");
+
+    int Choice = int.Parse(Console.ReadLine());
+
+    switch(Choice){
+      case 1:{
+        Console.WriteLine("Please enter 2 numbers");
+        double tal1 = int.Parse(Console.ReadLine());
+        double tal2 = int.Parse(Console.ReadLine());
+        
+        double addition = tal1 + tal2;
+        Console.WriteLine(tal1 + "+" + tal2 + " = " + addition);
+        Main(null);
+        break;
+      }
+
+      case 2:{
+        Console.WriteLine("Please enter 2 numbers");
+        double tal1 = int.Parse(Console.ReadLine());
+        double tal2 = int.Parse(Console.ReadLine());
+
+        double subtraction = tal1 - tal2;
+        Console.WriteLine(tal1 + "-" + tal2 + " = " + subtraction);
+        Main(null);
+        break;
+      }
+
+      case 3:{
+        Console.WriteLine("Please enter 2 numbers");
+        double tal1 = int.Parse(Console.ReadLine());
+        double tal2 = int.Parse(Console.ReadLine());
+
+        double division = tal1 / tal2;
+        Console.WriteLine(tal1 + "/" + tal2 + " = " + division);
+        Main(null);
+        break;
+      }
+
+      case 4:{
+        Console.WriteLine("Please enter 2 numbers");
+        double tal1 = int.Parse(Console.ReadLine());
+        double tal2 = int.Parse(Console.ReadLine());
+
+        double multiplication = tal1 * tal2;
+        Console.WriteLine(tal1 + "*" + tal2 + " = " + multiplication);
+        Main(null);
+        break;
+      }
+
+      case 5:{
+        Console.WriteLine("Quit? ");
+        string rst = Console.ReadLine().ToLower();
+        if (rst.StartsWith("n")){
+          Main(null);
+        }
+        break;
+      }
+
+      default:{
+        Console.WriteLine("Please choose a valid option.");
+        Main(null);
+        break;
+      }
+    }
+  }
+}
