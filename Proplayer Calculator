@@ -2,6 +2,10 @@ using System;
 
 class MainClass{
     public static void Main(string[] args){
+        Console.BackgroundColor = ConsoleColor.DarkGray;
+        Console.ForegroundColor = ConsoleColor.Magenta;
+
+
         Console.WriteLine("Welcome to Proplayer calculator 1.0 \n");
         Console.WriteLine("Please choose the type of calculation you wish to preform:");
 
@@ -22,8 +26,8 @@ class MainClass{
 
                     double addition = tal1 + tal2;
                     Console.WriteLine(tal1 + "+" + tal2 + " = " + addition);
-                    Console.WriteLine("press any key to continue");
-                    Console.ReadKey();
+                    Console.Write("Press any key to continue");
+                    Console.ReadKey();                    
                     Console.Clear();
                     Main(null);
                     break;
@@ -36,7 +40,7 @@ class MainClass{
 
                     double subtraction = tal1 - tal2;
                     Console.WriteLine(tal1 + "-" + tal2 + " = " + subtraction);
-                    Console.WriteLine("press any key to continue");
+                    Console.Write("Press any key to continue");
                     Console.ReadKey();
                     Console.Clear();
                     Main(null);
@@ -50,7 +54,7 @@ class MainClass{
 
                     double division = tal1 / tal2;
                     Console.WriteLine(tal1 + "/" + tal2 + " = " + division);
-                    Console.WriteLine("press any key to continue");
+                    Console.Write("Press any key to continue");
                     Console.ReadKey();
                     Console.Clear();
                     Main(null);
@@ -64,7 +68,7 @@ class MainClass{
 
                     double multiplication = tal1 * tal2;
                     Console.WriteLine(tal1 + "*" + tal2 + " = " + multiplication);
-                    Console.WriteLine("press any key to continue");
+                    Console.Write("Press any key to continue");
                     Console.ReadKey();
                     Console.Clear();
                     Main(null);
