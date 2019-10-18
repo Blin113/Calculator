@@ -22,6 +22,9 @@ class MainClass{
 
                     double addition = tal1 + tal2;
                     Console.WriteLine(tal1 + "+" + tal2 + " = " + addition);
+                    Console.WriteLine("press any key to continue");
+                    Console.ReadKey();
+                    Console.Clear();
                     Main(null);
                     break;
                 }
@@ -33,6 +36,9 @@ class MainClass{
 
                     double subtraction = tal1 - tal2;
                     Console.WriteLine(tal1 + "-" + tal2 + " = " + subtraction);
+                    Console.WriteLine("press any key to continue");
+                    Console.ReadKey();
+                    Console.Clear();
                     Main(null);
                     break;
                 }
@@ -44,6 +50,9 @@ class MainClass{
 
                     double division = tal1 / tal2;
                     Console.WriteLine(tal1 + "/" + tal2 + " = " + division);
+                    Console.WriteLine("press any key to continue");
+                    Console.ReadKey();
+                    Console.Clear();
                     Main(null);
                     break;
                 }
@@ -55,6 +64,9 @@ class MainClass{
 
                     double multiplication = tal1 * tal2;
                     Console.WriteLine(tal1 + "*" + tal2 + " = " + multiplication);
+                    Console.WriteLine("press any key to continue");
+                    Console.ReadKey();
+                    Console.Clear();
                     Main(null);
                     break;
                 }
